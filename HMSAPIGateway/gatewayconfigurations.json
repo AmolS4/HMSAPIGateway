@@ -1,0 +1,81 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Admin/patient-listing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 64913
+        }
+      ],
+      "UpstreamPathTemplate": "/api/patient-listing",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MasterData/Allergy-listing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 64913
+        }
+      ],
+      "UpstreamPathTemplate": "/api/allergy-listing",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MasterData/Diagnosis-listing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 64913
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Diagnosis-listing",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MasterData/Medication-listing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 64913
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Medication-listing",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MasterData/Procedure-listing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 64913
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Procedure-listing",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 50471
+        }
+      ],
+      "UpstreamPathTemplate": "/api/login",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+
+  ],
+  "GobalConfiguration": {
+    "BaseUrl": "http://localhost:59767"
+  }
+}
+
